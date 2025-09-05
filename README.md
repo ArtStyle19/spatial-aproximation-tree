@@ -1,6 +1,3 @@
-sudo dnf install freeglut freeglut-devel glfw glfw-devel mesa-libGLU-devel
-g++ main.cpp -o modo_grafico -lGL -lGLU -lglut -lglfw -lm
-
 # Spatial Approximation Tree (SA-Tree) — Visual Demo & Range Search
 
 This repository contains a minimal **C++/OpenGL** visualization and a toy implementation of a **Spatial Approximation Tree (SA-tree)** with a simple **range query** (click-to-search) over a 2D point set.
@@ -83,8 +80,6 @@ This demo follows the **spirit** of SA-trees while keeping the code compact for 
 
 ## 📸 Screenshots
 
-## 📸 Screenshots
-
 | Example: Range Search                                                         |
 | ----------------------------------------------------------------------------- |
 | <img src="readme-images/search_by_radio.png" alt="Range search" width="600"/> |
@@ -92,6 +87,21 @@ This demo follows the **spirit** of SA-trees while keeping the code compact for 
 | Example: Paper Reproduction                                                               |
 | ----------------------------------------------------------------------------------------- |
 | <img src="readme-images/paper_example.png" alt="Paper example reproduction" width="600"/> |
+
+## Run Code
+
+```bash
+sudo apt-get update
+sudo apt-get install -y g++ cmake libglfw3-dev freeglut3-dev libglu1-mesa-dev
+g++ -O2 -std=c++17 main.cpp -lglfw -lGL -lglut -lGLU -lm -o sa-tree
+./sa-tree
+```
+
+```bash
+sudo dnf install freeglut freeglut-devel glfw glfw-devel mesa-libGLU-devel
+g++ main.cpp -o sa-tree -lGL -lGLU -lglut -lglfw -lm
+./sa-tree
+```
 
 ## Further reading
 
@@ -103,3 +113,7 @@ If you want to dive deeper, check out the papers included in the `/papers` folde
 - Navarro & Reyes, _Dynamic SA-trees for Massive Data_ (disk-based dsa\*/dsa+, SISAP 2009).
 - Barroso et al., _Enlarging Nodes to Improve DSA-trees_ (clustering, SISAP 2010).
 - Peñarrieta et al., _Distributed SAT (SAT\*)_ (root selection, CLEI 2006).
+
+```
+
+```
