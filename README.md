@@ -83,15 +83,11 @@ This demo follows the **spirit** of SA-trees while keeping the code compact for 
 
 ## 📸 Screenshots
 
-<p align="center">
-  <img src="readme-images/search_by_radio.png" alt="Range search" width="45%" />
-  &nbsp;&nbsp;
-  <img src="readme-images/paper_example.png" alt="Paper example reproduction" width="45%" />
-</p>
+| Example: Range Search                                                         | Example: Paper Reproduction                                                               |
+| ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| <img src="readme-images/search_by_radio.png" alt="Range search" width="400"/> | <img src="readme-images/paper_example.png" alt="Paper example reproduction" width="400"/> |
 
----
-
-## 📚 Further reading
+## Further reading
 
 If you want to dive deeper, check out the papers included in the `/papers` folder:
 
