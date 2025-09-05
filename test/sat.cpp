@@ -413,15 +413,21 @@ void draw_query(float x, float y, int r) {
     }
     glEnd();
 
-    // Draw covering radius as a circle
-    glColor3f(1.0f, 0.0f, 1.0f);  // Set color to blue
+
+    // Establece grosor de línea más grueso
+    glLineWidth(3.0f); // Línea más gruesa (ajusta el valor según necesites)
+    
+    // Dibuja círculo de radio
+    glColor3f(1.0f, 1.0f, 1.0f); // Verde brillante (cambiado de magenta)
     glBegin(GL_LINE_LOOP);
     for (int i = 0; i < 360; i++) {
         float theta = i * 3.14159f / 180;
         glVertex2f(x + r * cos(theta), y + r * sin(theta));
     }
+
     glEnd();
 
+    glLineWidth(1.0f);
 
 
 
