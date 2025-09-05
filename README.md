@@ -1,5 +1,9 @@
 # Spatial Approximation Tree (SA-Tree) — Visual Demo & Range Search
 
+## Developed by Jorge Guillermo Olarte Quispe
+
+## Universidad Nacional del Altiplano – Ingeniería de Sistemas
+
 This repository contains a minimal **C++/OpenGL** visualization and a toy implementation of a **Spatial Approximation Tree (SA-tree)** with a simple **range query** (click-to-search) over a 2D point set.
 
 It’s intended as a **learning and demo tool** that ties the classic SA-tree / DSA-tree papers to a working, visual example.
@@ -7,6 +11,15 @@ It’s intended as a **learning and demo tool** that ties the classic SA-tree / 
 > SA-trees _“approach”_ the query spatially instead of dividing the space.  
 > They’re effective **metric indexes** especially when **selectivity is low** or the space is **hard to split**.  
 > **Dynamic SA-trees (DSA-trees)** extend SA-trees with **insertions/deletions** and often improve search performance in practice.
+
+---
+
+## 📸 Screenshots
+
+| Example:      | Screenshot                                                                                |
+| ------------- | ----------------------------------------------------------------------------------------- |
+| Range Search  | <img src="readme-images/search_by_radio.png" alt="Range search" width="600"/>             |
+| Paper Example | <img src="readme-images/paper_example.png" alt="Paper example reproduction" width="600"/> |
 
 ---
 
@@ -77,13 +90,6 @@ This demo follows the **spirit** of SA-trees while keeping the code compact for 
   - SA/DSA shines in **general metric settings** where ANN assumptions don’t hold.
 
 ---
-
-## 📸 Screenshots
-
-| Example:      | Screenshot                                                                                |
-| ------------- | ----------------------------------------------------------------------------------------- |
-| Range Search  | <img src="readme-images/search_by_radio.png" alt="Range search" width="600"/>             |
-| Paper Example | <img src="readme-images/paper_example.png" alt="Paper example reproduction" width="600"/> |
 
 ## Run Code
 
